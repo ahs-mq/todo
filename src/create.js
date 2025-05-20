@@ -1,6 +1,6 @@
-class CreateTask {
+export class CreateTask {
     constructor(title,desc,date,check,notes){
-        this.form = title;
+        this.title = title;
         this.desc = desc;
         this.date = date;
         this.check = check;
@@ -20,8 +20,9 @@ class CreateTask {
         const taskDesc = document.createElement('p');
         taskDesc.textContent = this.desc;
         taskDesc.classList.add('taskdesc');
-        postedTask.appendChild(taskDesc)
-        
+        postedTask.appendChild(taskDesc);
+
+
 
     }
 }
