@@ -13,7 +13,6 @@ export class AppendTask {
 
         // Convert string to a date object
         let date = parseISO(dateString);
-        console.log("Parsed Date:", date);
 
         // Check if date is in the past
         if (isPast(date)) {

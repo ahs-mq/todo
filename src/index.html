@@ -13,20 +13,20 @@
           <h2>Create Task</h2>
           <form id="task">
             <label for="title">Title</label>
-            <input type="text" id="title" name="title">
+            <input type="text" id="title" name="title" minlength="5" maxlength="50" required>
             <label for="desc">Description</label>
-            <input type="text" id="desc" name="desc">
+            <input type="text" id="desc" name="desc" minlength="1" maxlength="150" required>
             <label for="ddate">Due Date</label>
-            <input type="date" id="ddate" name="ddate">
+            <input type="date" id="ddate" name="ddate" required>
             <p>Priority:</p>
-            <input type="radio" id="low" name="priority" value="low">
+            <input type="radio" id="low" name="priority" value="low" required>
             <label for="radio">Low</label>
-            <input type="radio" id="med" name="priority" value="med">
+            <input type="radio" id="med" name="priority" value="med" required>
             <label for="radio">Medium</label>
-            <input type="radio" id="high" name="priority" value="high">
+            <input type="radio" id="high" name="priority" value="high" required>
             <label for="radio">High</label>
             <label for="notes">Notes</label>
-            <input type="text" id="notes" name="notes">
+            <input type="text" id="notes" name="notes" maxlength="300">
             <input type="submit" value="submit">
           </form>
         </div>

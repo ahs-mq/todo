@@ -16,3 +16,11 @@ document.getElementById('task').addEventListener("submit", (event)=>{
     organizeTask.checkDate(taskElement);
 });
 
+function defaultTask(){
+    let defaultToDo = new CreateTask("Test","Test description","2025-12-12","low","Test Note");
+    const defaultToDoDiv = defaultToDo.taskDiv();
+    const defaultOrganize = new AppendTask();
+    defaultOrganize.checkDate(defaultToDoDiv);
+}
+
+defaultTask();

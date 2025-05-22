@@ -37,11 +37,14 @@ export class CreateTask {
         taskPio.classList.add('taskPio');
         postedTask.appendChild(taskPio);
 
+        //check if notes is not null to avoid errors
+        
+        if (this.notes != null){
         const taskNotes = document.createElement('p');
         taskNotes.textContent = this.notes;
         taskNotes.classList.add('taskNotes');
         postedTask.appendChild(taskNotes);
-
+        }
         const taskDelete = document.createElement('button');
         taskDelete.textContent = "Delete";
         taskDelete.classList.add('taskDelete');
