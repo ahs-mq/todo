@@ -36,6 +36,12 @@ body {
     border: 2px solid green;
 }
 
+#task {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .current {
     display: grid;
     grid-column: 2 / -1;
